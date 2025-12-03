@@ -1,5 +1,7 @@
 # ResumeSeeker.ai
 
+**"The Job Finds You"**
+
 AI-powered job matching platform that finds perfect job opportunities based on your resume.
 
 ## Features
@@ -25,14 +27,14 @@ AI-powered job matching platform that finds perfect job opportunities based on y
 
 - Docker and Docker Compose
 - Python 3.11+ (for local development)
-- Node.js 20+ (for local development)
+- Bun 1.0+ (for local development)
 
 ### Quick Start with Docker
 
 1. Clone the repository:
 ```bash
 git clone <repository-url>
-cd resumejob
+cd resumeseeker
 ```
 
 2. Start all services:
@@ -65,15 +67,18 @@ uvicorn app.main:app --reload
 #### Frontend Setup
 
 ```bash
-cd frontend
-npm install
-npm run dev
+# Install Bun if you haven't already
+curl -fsSL https://bun.sh/install | bash
+
+# Install dependencies and start dev server
+bun install
+bun run dev
 ```
 
 ## Project Structure
 
 ```
-resumejob/
+resumeseeker/
 ├── backend/              # Python FastAPI backend
 │   ├── app/
 │   │   ├── api/         # API endpoints
@@ -130,9 +135,8 @@ pytest
 
 Frontend:
 ```bash
-cd frontend
-npm run test
-npm run test:e2e
+bun run test
+bun run test:e2e
 ```
 
 ### Database Migrations
@@ -157,8 +161,8 @@ flake8 backend/
 mypy backend/
 
 # Frontend
-npm run lint
-npm run format
+bun run lint
+bun run format
 ```
 
 ## Deployment

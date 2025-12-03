@@ -1,6 +1,8 @@
 # ResumeSeeker.ai - Development Progress
 
-Last Updated: 2025-01-15
+**"The Job Finds You"**
+
+Last Updated: 2025-12-03
 
 ---
 
@@ -97,6 +99,7 @@ Last Updated: 2025-01-15
 - [x] Configure Tailwind theme
 - [x] Install additional dependencies (zod, lucide-svelte)
 - [x] Create app.css with Tailwind imports
+- [x] Switch from npm to Bun (3-4x faster installs)
 - [ ] Create Dockerfile.dev for frontend
 
 ### Frontend Structure
@@ -547,6 +550,7 @@ Last Updated: 2025-01-15
 - Chose sentence-transformers over OpenAI embeddings (free, fast, open-source)
 - SvelteKit for frontend (modern, fast, great DX)
 - FastAPI for backend (async, high performance, great for ML)
+- Bun instead of Node.js/npm (3-4x faster installs, all-in-one toolkit, better DX)
 
 ### Technical Debt
 - None yet (will track as we go)
@@ -567,4 +571,5 @@ Last Updated: 2025-01-15
 
 ## Version History 📅
 
+- **v0.1.1** (2025-12-03): Switched frontend to Bun, added project slogan "The Job Finds You"
 - **v0.1.0** (2025-01-15): Initial project setup, backend foundation complete
